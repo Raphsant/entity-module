@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: 'notosans';
-    src: url('./assets/fonts/NotoSans-Light.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+/*@font-face {*/
+/*    font-family: 'notosans';*/
+/*    src: url('../assets/fonts/NotoSans-Light.ttf') format('truetype');*/
+/*    font-weight: normal;*/
+/*    font-style: normal;*/
+/*}*/
 html{
     background-color: rgba(4, 246, 239, 0.06);
 }
