@@ -40,6 +40,12 @@ export default defineNuxtConfig({
       tailwindcss: {},
       autoprefixer: {},
     },
+    //@ts-ignore
+    cssnano:
+        process.env.NODE_ENV === 'production'
+            ? { preset: ['default', { discardComments: { removeAll: true } }] }
+            : false, // disable cssnano when not in production
+
   },
   ui: {
     icons: ["ph", "simple-icons"],
@@ -50,6 +56,7 @@ export default defineNuxtConfig({
     },
   },
   router: {
+    //@ts-ignore
     scrollBehavior(to, from, savedPosition) {
       if (savedPosition) {
         return savedPosition;
