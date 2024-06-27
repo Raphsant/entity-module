@@ -7,14 +7,11 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    "@pinia/nuxt",
-    "@pinia-plugin-persistedstate/nuxt",
     "@nuxt/ui",
     "@nuxtjs/fontaine",
     "@nuxtjs/google-fonts",
-    "@nuxtjs/device",
     "@vueuse/nuxt",
-    "@sidebase/nuxt-pdf",
+
   ],
   //@ts-ignore
   browser: "firefox",
